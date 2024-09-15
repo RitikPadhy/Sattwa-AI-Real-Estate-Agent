@@ -1,0 +1,29 @@
+Real Estate Atomy 
+
+Our project should be divided in the following steps:
+1.Understand what a real estate atomy does and sees which all tasks can be automated. Specify the RAG requirements such as the types of documents it generates, the legal advice it should provide and the interactions it should handle.
+
+2.Gather relevant data for training mostly such as transaction documents, contracts, legal texts and previous texts from real estate attorneys. Label the data to help the model understand.
+
+3. Design the RAG architecture
+-Retrieval Component searches for relevant information or documents based on the input query
+-Prompt engineering refines the input query
+-Generation Component uses a language model which produces text based responses or documents based on the refined query and the info/documents produced by the Retrieval component
+
+4. Training and Fine Tuning: Makes our model more proficient and accurate in generating legal documents and advice by using the training and fine tuning process.
+
+(Note: We should be able to integrate with different LLMs)
+
+5. Integration and User interface: Develop an API which integrates the RAG model with our application. Design an UI where clients can input their queries and scenarios related to real estate law.
+
+6. Deploy, Validation and accuracy: Deploy the application and check if the output produced is legally accurate and compilant with local regulations. The AI agent should improve its accuracy and performance over time with the user feedback and interactions.
+
+Example workflow:
+-User query: Draft a purchase agreement for a residential property sale
+-Retrieval: Fetches relevant clauses and documents related to purchase agreements
+-Generation: Uses the reterived documents and refined query to generate a draft purchase agreement
+-User review: Present the draft to user for review 
+-Iteration: Allow the user to refine the input and regenerate the documents as needed
+
+Any extra points to be added:
+-Our application should be able to plug into different LLMs at any different times

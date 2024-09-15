@@ -1,0 +1,13 @@
+Checks
+
+1. data_collection.py - Checked - WORKS
+2. data_fetching.py - Checked - 70-80% of editing is done, rest depends on how you want the data to look like. Can use chunks and batches to 
+optimize the space problem to hold data.
+3. FAISS_search.py - For now, the search still has to be checked.
+4. 
+
+
+
+
+
+

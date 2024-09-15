@@ -1,0 +1,170 @@
+Our agent should be able to handle these tasks as given below:
+-Contract Drafting and Review: Drafting new contracts, Reviewing existing contract for legal issues and summarizing contract clauses.
+-Due diligence(investigation): Perform due diligence for property transactions, and check for liens(If you dont pay your mortgage, the bank can put a lien on the house and take it if the debt aint paid), encumbrances(The property might have some claim or restriction which might affect when transferring it) or other legal issues.
+-Legal advice: Should explain legal terms and clauses, advice on dispute resolution and provide advice on regulatory compliance(To maintain the organsation to work within a legal framework)
+-Transaction management: Prepare and review closing documents, help in managing the closing processes
+-Legal document Preparation: Preparing and filling out legal forms and documents based on user input
+
+
+Seeing our tasks our agent is able to work on, these are the prompts which will help the user to get the needed service:
+-Contract Drafting and Review
+1."Draft a contract for a commercial lease agreement between [party A] and [party B]?"
+2."Review the following contract for any legal issues: [contract text]"
+3."Summarize the key points of the following contract clause: [clause text]"
+-Due Diligence
+1."Perform due diligence for purchasing a property at [address]. Provide a list of potential legal issues."
+2."Check for any liens or encumbrances on the property at [address]."
+-Legal Advice
+1."Explain the implications of the following legal term: [term]"
+2."Advice on resolving a lease dispute between a landlord and tenant."
+3."What are the compilance requirements for leasing a commercial property in [location]?"
+-Transaction Management
+1."Outline the steps required to close a real estate transaction."
+2."Prepare a checklist of closing documents needed for property sale."
+-Legal Document Preparation
+1."Prepare a power of attorney document for [Person A] to act on behalf of [Person B]."
+2."Fill out a standard lease agreement form with the following details: [details]"
+
+
+What are the prompt patterns seen in our businees case?
+-Contract Drafting and Review
+1."Draft [document] for [purpose]"
+2."Review [document] for [purpose]"
+3."Prepare [document] with details"
+-Due diligence
+1."Perform due diligence for [transaction type] at [location]. Provide a list of potential [issues]."
+2."Check for any [legal issues] on the property at [location]."
+-Legal Advice
+1."Explain the implications of the following [legal term]: [term]."
+2."Advice on resolving a [dispute type] between [parties]."
+3."What are the compilance requirements for [action] in [location]?"
+-Transaction Management
+1."Outline the steps required to [complete process]."
+2."Prepare a checklist for [task] needed for [transaction type]."
+-Legal Document Preparation
+1."Prepare a [document type] for [person A] to act on behalf of [person B]."
+2."Fill out a [standard form type] with the following details: [details]."
+
+
+What are the response templates for our prompts patterns above?
+-Contract Drafting and Review
+1.Contract Drafting:
+Here is the drafted [contract type] for [parties]:
+[Contract Contact]
+
+Please review and let me know if any changes are needed.
+2.Contract Review
+After reviewing the provided contract, here are the identified issues and recommendations:
+-Issue 1: [Description]
+Recommendation: [Action]
+-Issue 2: [Description]
+Recommendation: [Action]
+
+Please let me know if you need further details or assistance
+3. Summarizing Document Sections
+Summary of key points:
+1.[Key point 1]
+2.[Key point 2]
+3.[Key point 3]
+...
+[Additional Comments or Recommendations]
+
+Please let me know if you need further details or clarification.
+
+-Due Diligence
+1.Due Diligence report with potential issues
+Due Diligence report for [Transaction Type] at [Location]:
+Identified Issues:
+1. [Issue 1]
+2. [Issue 2]
+3. [Issue 3]
+...
+
+Recommendations:
+-Recommendation 1: [Description]
+-Recommendation 2: [Description]
+-Recommendation 3: [Description]
+
+Please review the report and let me know if you need any further details or assistance.
+2.Legal Issues report 
+Legal Issues Report for Property at [Location]:
+
+Identified Legal Issues:
+1. [Legal Issue 1]
+2. [Legal Issue 2]
+3. [Legal Issue 3]
+...
+
+Recommendations:
+- Recommendation 1: [Description]
+- Recommendation 2: [Description]
+- Recommendation 3: [Description]
+
+Please review the report and contact us if you need further details or assistance.
+
+-Legal Advice
+1.Legal term explanation
+Explanation of [Term]:
+[Detailed Explanation]
+
+If you need further clarification, please ask.
+2.Advice on resolving dispute
+Advice on resolving [Dispute Type] between [Parties]:
+
+Identified Issues:
+1. [Issue 1]
+2. [Issue 2]
+3. [Issue 3]
+...
+
+Recommended Actions:
+-Action 1: [Description]
+-Action 2: [Description]
+-Action 3: [Description]
+
+Please let me know if you need any further details or assistance
+3.Compilance Requirements
+Compilance Requirements for [Action] in [Location]:
+-Requirement 1: [Details]
+-Requirement 2: [Details]
+-Recommendations: [Details]
+
+Ensure all requirements are met to avoid legal issues
+
+-Transaction Management
+1. Outline the steps
+Steps required to [Complete Process]:
+
+1. Step 1: [Description]
+2. Step 2: [Description]
+3. Step 3: [Description]
+
+Please ensure all steps are followed to successfully complete the process.
+
+Let me know if you need any further details or assistance.
+2. Prepare a checklist
+Checklist for [Task] Needed for [Transaction type]:
+
+1. Item 1: [Description]
+2. Item 2: [Description]
+3. Item 3: [Description]
+...
+
+Ensure all items are checked off to complete the task successfully.
+
+Let me know if you need any further details or assistance.
+
+-Legal Document Preparation
+1. Prepare a document
+Here is the prepared [Document Type] for [Person A] to act on behalf of [Person B]:
+[Document Content]
+
+Please review and let me know if any changes are needed.
+
+2. Fill out a standard form
+Here is the filled-out [Standard Form Type] with the following details:
+[Details]
+
+[Form Content]
+
+Please review and let me know if any changes are needed.

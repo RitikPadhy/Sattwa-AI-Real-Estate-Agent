@@ -1,0 +1,10 @@
+Frontend: Sends a prompt from the user to the backend Flask application.
+Flask Backend (app.py): Receives the prompt and passes it to the ModelHandler in model_handler.py.
+ModelHandler:
+Retrieves previous conversation data using the session manager.
+Fetches data from data_fetching.py, data_collection.py, and FAISS_search.py.
+Constructs a final prompt including previous responses and additional fetched data.
+Sends the constructed prompt to the model.py to generate a response.
+Session Management (session_manager.py): Keeps track of previous prompts and responses.
+Model (model.py): Generates the final response.
+Frontend: Displays the response to the user.

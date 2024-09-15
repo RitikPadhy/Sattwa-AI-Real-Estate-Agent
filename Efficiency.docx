@@ -1,0 +1,25 @@
+1. Increase Embedding Efficiency:
+
+Check the chunk size used in CharacterTextSplitter. A smaller chunk size with less overlap may result in faster processing. You can experiment with chunk sizes between 2000 to 4000 and reduce chunk overlap.
+Consider precomputing and storing embeddings if you are frequently querying the same documents. This way, the embeddings are already indexed in Chroma, and you can skip re-embedding them at runtime.
+
+2. Optimize Retrieval:
+
+If possible, try using a more efficient embedding model or a smaller one, as the current model nomic-embed-text may be consuming a lot of time. Consider a quantized or lower-latency embedding model.
+Experiment with reducing the dimensionality of the embeddings if that doesn't impact performance. This could help improve vector store query speed.
+
+3. Use a Faster Model:
+
+The mistral model used in ChatOllama might be slow. Consider using a lighter or quantized version of the model. Quantized models (like 4-bit or 8-bit) can significantly improve inference speed without sacrificing too much performance.
+
+4. Parallelization:
+
+Depending on the resources available, you could try parallelizing the retrieval or model inference steps, especially if you are using a multi-core machine.
+
+5. Caching:
+
+Implement caching mechanisms to store recent query results. If the same or similar queries are asked multiple times, the cached response can be retrieved immediately.
+
+6. Model Loading:
+
+Check if the model loading (ChatOllama(model="mistral")) is happening for every query. If so, try loading the model once and keeping it in memory while the UI is running to avoid reloading it for every request.

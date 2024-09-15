@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Prompt Interaction</title>
+</head>
+<body>
+    <h1>Model Interaction</h1>
+    <input type="text" id="prompt" placeholder="Enter your prompt">
+    <button onclick="sendPrompt()">Send Prompt</button>
+    <button onclick="clearSession()">Clear Session</button>
+    <div id="response"></div>
+
+    <script>
+        async function sendPrompt() {
+            const prompt = document.getElementById('prompt').value;
+            const responseElement = document.getElementById('response');
+            
+            const response = await fetch('/ask', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ prompt })
+            });
+
+            const data = await response.json();
+            responseElement.innerHTML = `<p>Response: ${data.response}</p>`;
+        }
+
+        async function clearSession() {
+            const responseElement = document.getElementById('response');
+            
+            const response = await fetch('/clear_session', {
+                method: 'POST'
+            });
+
+            const data = await response.json();
+            responseElement.innerHTML = `<p>${data.message}</p>`;
+        }
+    </script>
+</body>
+</html>
